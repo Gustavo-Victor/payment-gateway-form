@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Payment Form </title>
+
+        <!--styles-->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        
+        <!--container-->
+        <div class="container">
+            <!--payment form-->
+            <form action="#" id="payment-form">
+                <div class="row">
+                    <!--address info-->
+                    <div class="col">
+                        <h3 class="title">billing address</h3>
+                    
+                        <div class="input-box">
+                            <label for="fullname">full name: </label>
+                            <input type="text" name="fullname" id="fullname" placeholder="John Doe" required />
+                        </div>
+                        <div class="input-box">
+                            <label for="email">email: </label>
+                            <input type="email" name="email" id="email" placeholder="example@email.com" required />
+                        </div>
+                        <div class="input-box">
+                            <label for="address">address: </label>
+                            <input type="text" name="address" id="address" placeholder="room - street - locality" required />
+                        </div>
+                        <div class="input-box">
+                            <label for="city">city: </label>
+                            <input type="text" name="city" id="city" placeholder="Campinas" required />
+                        </div>
+                        <div class="flex">
+                            <div class="input-box">
+                                <label for="state">state: </label>
+                                <input type="text" name="state" id="state" placeholder="Sao Paulo" required />
+                            </div>
+                            <div class="input-box">
+                                <label for="zip-code">zip code: </label>
+                                <input type="text" name="zip-code" id="zip-code" placeholder="123 456" required />
+                            </div>
+                        </div>
+                        <!-- <div class="input-box">
+                            <label for="country">country: </label>
+                            <input type="text" name="country" id="country" placeholder="Brazil" required />
+                        </div> -->
+                        
+                    </div>
+                    <!--payment info-->
+                    <div class="col">
+                        <h3 class="title">payment</h3>
+                    
+                        <div class="input-box">
+                            <label for="cards-accepted">cards accepted: </label>
+                            <img src="./assets/images/card_img.png" alt="cards_accepted" id="cards-accepted" />
+                        </div>
+                        <div class="input-box">
+                            <label for="name-on-card">name on card: </label>
+                            <input type="text" name="name-on-card" id="name-on-card" placeholder="Mr. John Doe" required />
+                        </div>
+                        <div class="input-box">
+                            <label for="credit-card-number">credit card number: </label>
+                            <input type="text" name="credit-card-number" id="credit-card-number" placeholder="1111 2222 3333 4444" required />
+                        </div>
+                        <div class="input-box">
+                            <label for="exp-month">exp month: </label>
+                            <input type="number" name="exp-month" id="exp-month" placeholder="03" min="1" max="12" required />
+                        </div>
+                        <div class="flex">
+                            <div class="input-box">
+                                <label for="exp-year">exp year: </label>
+                                <input type="number" name="exp-year" id="exp-year" placeholder="2029" required />
+                            </div>
+                            <div class="input-box">
+                                <label for="cvv">CVV: </label>
+                                <input type="number" name="cvv" id="cvv" placeholder="945" required />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="submit-button" type="submit">proceed to checkout</button>
+            </form>            
+        </div>
+
+    </body>
+</html>
